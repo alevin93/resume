@@ -11,6 +11,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from "@material-ui/core";
 import { useState } from "react";
 
+// TO PUSH TO GIT
+// git add .
+// git commit -m 'description of changes'
+// git push
+
 function App() {
 
   const [ navToggle, setNavToggle ] = useState(false);
