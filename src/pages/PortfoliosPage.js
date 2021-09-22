@@ -11,8 +11,10 @@ function PortfoliosPage() {
     const [ menuItem, setMenuItems] = useState(portfolios);
     const [ button, setButtons ] = useState(allButtons);
 
+
+    //website will not deploy with errors and setButtons is not used *shrug*
     if(setButtons){
-        return;
+        break;
     }
 
     const filter = (button) => {
