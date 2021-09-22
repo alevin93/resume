@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { MainLayout } from '../styles/Layouts';
 import Title from '../components/Title';
 import ImageSection from '../components/ImageSection';
-import Particle from '../components/Particle';
 import ServicesSection from '../components/ServicesSection';
 import ReviewsSection from '../components/ReviewsSection';
 

@@ -11,6 +11,10 @@ function PortfoliosPage() {
     const [ menuItem, setMenuItems] = useState(portfolios);
     const [ button, setButtons ] = useState(allButtons);
 
+    if(setButtons){
+        return;
+    }
+
     const filter = (button) => {
 
         if(button === 'All'){

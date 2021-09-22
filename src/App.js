@@ -6,7 +6,6 @@ import AboutPage from './pages/AboutPage';
 import ResumePage from './pages/ResumePage';
 import PortfoliosPage from './pages/PortfoliosPage';
 import ContactPage from './pages/ContactPage';
-import Particle from "./components/Particle";
 import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from "@material-ui/core";
 import { useState } from "react";
