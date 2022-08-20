@@ -7,6 +7,7 @@ import ResumePage from './pages/ResumePage';
 import PortfoliosPage from './pages/PortfoliosPage';
 import ContactPage from './pages/ContactPage';
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import { IconButton } from "@material-ui/core";
 import { useState } from "react";
 
@@ -17,21 +18,37 @@ import { useState } from "react";
 
 function App() {
 
-  const [ navToggle, setNavToggle ] = useState(false);
+  const [ toggle, setToggle ] = useState(false);
+
+  const handleToggle=()=> {
+
+    console.log("Toggle is: " + toggle);
+    
+    if(toggle) {  
+      setToggle(!toggle);
+    }
+    else if (!toggle) {
+      setToggle(toggle);
+    }
+  }
+
+  const closeNav=()=> {
+    console.log("closeNav is run");
+    setToggle(!toggle)
+  }
 
   return (
-    <div className="App">
-      <Sidebar navToggle={navToggle}/>
+    <div className="App" >
 
+      <Sidebar toggle={toggle} fn={closeNav} />
       <div className="hamburger-menu">
-        <IconButton onClick={() => setNavToggle(!navToggle)}>
+        <IconButton onClick={()=>setToggle(!toggle)}>
           <div className="fixed-layer">
-            <MenuIcon />
+              {!toggle ? <MenuIcon /> : <CloseIcon /> }
           </div>
         </IconButton>
       </div>
-
-      <MainContentStyled>
+      <MainContentStyled onClick={handleToggle} >
         <div className="lines">
           <div className="line-1"></div>
           <div className="line-2"></div>
@@ -39,10 +56,10 @@ function App() {
           <div className="line-4"></div>
         </div>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/" exact >
             <HomePage />
           </Route>
-          <Route path="/about" exact>
+          <Route path="/about" exact >
             <AboutPage />
           </Route>
           <Route path="/resume" exact>

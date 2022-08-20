@@ -11,19 +11,19 @@ function Navigation() {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+                    <NavLink to="/" activeClassName="active-class" exact >Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
+                    <NavLink to="/about" activeClassName="active-class" exact >About</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+                    <NavLink to="/resume" activeClassName="active-class" exact >Resume</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+                    <NavLink to="/portfolios" activeClassName="active-class" exact >Portfolios</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                    <NavLink to="/contact" activeClassName="active-class" exact >Contact</NavLink>
                 </li>
             </ul>
             <footer className="footer">
@@ -55,6 +55,7 @@ const NavigationStyled = styled.nav`
         }
     }
 
+    
     .nav-items{
         width: 100%;
         text-align: center;

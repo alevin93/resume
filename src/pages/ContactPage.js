@@ -7,37 +7,56 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationIcon from '@material-ui/icons/PersonPinCircle';
 import ContactItem from '../components/ContactItem';
+import emailjs from 'emailjs-com'
+
 
 function ContactPage() {
+
+    function sendEmail(e) {
+        console.log("sendEmail has been run")
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_ootomig', e.target, 'ZXiv-dhXWENopmWoM')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    }
+
+
+
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationIcon />
+
     return (
         <MainLayout>
             <ContactPageStyled>
                 <Title title={'Contact Me'} span={'Contact Me'} />
                 <InnerLayout className={'contact-section'}>
                     <div className={"left-content"}>
-                        <form className="form">
+                        <form className="form" onSubmit={sendEmail}>
                             <div className="form-field">
                                 <label htmlFor="name" id="name">Name</label>
-                                <input type="text" id="name" />
+                                <input type="text" id="name" name="name"/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="name" id="name">Email</label>
-                                <input type="email" id="email" />
+                                <input type="email" id="email" name="email"/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="name" id="name">Subject</label>
-                                <input type="text" id="subject" />
+                                <input type="text" id="subject" name="subject"/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="text-area">Message</label>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                                <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
                             </div>
                             <div>
                                 <div className="form-field f-button">
-                                    <PrimaryButton title={'Submit'} />
+                                    <PrimaryButton title={'Submit'} onSubmit={sendEmail} />
                                 </div>
                             </div>
                         </form>
