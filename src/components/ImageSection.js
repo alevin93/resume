@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import resume from '../img/aboutpage.jpg'
 import PrimaryButton from './PrimaryButton';
+import resumeB from '../img/ResumeB.pdf'
 
 function ImageSection() {
     return (
@@ -12,7 +13,7 @@ function ImageSection() {
             <div className="right-content">
                     <h4>I am <span>Alex Levin</span></h4>
                 <p className="paragraph">
-                    I'm recently graduated from college and trying to figure out what to do with the rest of my life.  I have a lot of side projects, some of which are even almost finished.  I am apiring to be a programmer whether in web developement, data science, or any other field that interests me.  Thank you for visiting my website.
+                    I'm recently graduated from college and trying to figure out what to do with the rest of my life.  I have a lot of side projects, some of which are even almost finished.  I am aspiring to be a programmer whether in web developement, data science, or any other field that interests me.  Thank you for visiting my website.
                 </p>
                 <div className="about-info">
                     <div className="info-title">
@@ -30,7 +31,7 @@ function ImageSection() {
                         <p>: Los Angeles, CA</p>
                     </div>
                 </div>
-                <PrimaryButton title={'Download CV'} />
+                <PrimaryButton title={'Download CV'} href={resumeB} />
             </div>
         </ImageSectionStyled>
     )
