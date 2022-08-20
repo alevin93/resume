@@ -46,7 +46,7 @@ function ContactPage() {
                         <ContactItem 
                             icon={phone} 
                             title={'Phone'}
-                            contact1={'(818) 205 - 7129'}
+                            contact1={'(818) 205-7129'}
                         />
                         <ContactItem 
                             icon={email} 

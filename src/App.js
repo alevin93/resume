@@ -71,6 +71,7 @@ const MainContentStyled = styled.main`
   }
 
   .lines{
+    visibility: hidden;
     position: absolute;
     min-height: 100%;
     width: 100%;
