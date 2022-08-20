@@ -25,10 +25,10 @@ const portfolios = [
         id: 3,
         category: 'Node.js',
         image: streamingsite,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How to make a website',
-        text: 'most versatile language'
+        link1: 'https://www.github.com/alevin93/background.show',
+        link2: '',
+        title: 'Streaming Site',
+        text: 'Definitely no copyright infringement here'
     }
 ]
 
