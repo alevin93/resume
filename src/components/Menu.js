@@ -125,7 +125,6 @@ const MenuItemStyled = styled.div`
                 &::before{
                     height: calc(100% - 32%);
                     width: calc(100% - 4%);
-                    background-color: white;
                     opacity: 0.2;
                     transform-origin: left;
                     transform: scale(1);
