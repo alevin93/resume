@@ -15,49 +15,37 @@ function Resume() {
             <Title title={'Resume'} span={'Resume'} />
             <InnerLayout>
                 <div className="small-title">
-                    <SmallTitle icon={briefcase} title={'Working Experience'} />
-                </div>
-                <div className="resume-content">
-                    <ResumeItem 
-                        year={'2015 - 2020'} 
-                        title={'Master of Explosions'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
-                    />
-                    <ResumeItem 
-                        year={'2012-2015'} 
-                        title={'Gay Boy'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
-                    />
-                    <ResumeItem 
-                        year={'2000-2011'} 
-                        title={'Crushing It'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
-                    />
-                </div>
-                <div className="small-title">
                     <SmallTitle icon={school} title={'Education'} />
                 </div>
                 <div className="resume-content">
                     <ResumeItem 
-                        year={'2015 - 2020'} 
-                        title={'Master of Explosions'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
+                        year={'2017 - 2022'} 
+                        title={'California State University, Northridge'}
+                        subTitle={'B.S. of Computer Science'}
+                        text={'Programming, data structures, algorithms, project management including agile and other development strategies. Please see the bottom right for known programming languages and skill level. '}
+                    />
+                </div>
+                <div className="small-title">
+                    <SmallTitle icon={briefcase} title={'Working Experience'} />
+                </div>
+                <div className="resume-content">
+                    <ResumeItem 
+                        year={'2012 - 2020'} 
+                        title={'Junior Account Manager'}
+                        subTitle={'Armanino, LLP / RBZ, LLP'}
+                        text={'Managed client affairs including paying their bills, reconciling bank accounts, made calls to vendors on behalf of clients'}
                     />
                     <ResumeItem 
-                        year={'2012-2015'} 
-                        title={'Gay Boy'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
+                        year={'2020 - Current'} 
+                        title={'Technician / Manager'}
+                        subTitle={'Asurion Tech Repair'}
+                        text={'Repair phones, computers, and game consoles. Quickly moved into management, ordering stock, making employee schedules, tending to customer concerns '}
                     />
                     <ResumeItem 
-                        year={'2000-2011'} 
-                        title={'Crushing It'}
-                        subTitle={'Kazuma Party'}
-                        text={'What the fuck did you just say about me you little bitch ill have you know i graduated t'}
+                        year={'2022 - Current'} 
+                        title={'Intern Programmer'}
+                        subTitle={'Lifeshack.com'}
+                        text={'Build web application components, find and fix bugs, and design interface '}
                     />
                 </div>
             </InnerLayout>

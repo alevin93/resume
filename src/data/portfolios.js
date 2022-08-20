@@ -1,30 +1,30 @@
-import dog from '../img/portImages/dog.jpeg'
-import frog from '../img/portImages/frog.png'
-import horse from '../img/portImages/horse.jpg'
+import streamingsite from '../img/portImages/streamingsite.png'
+import resumeimage from '../img/portImages/resume.png'
+import videogame from '../img/portImages/videogame.jpg'
 
 const portfolios = [
     {
         id: 1,
-        category: 'Python',
-        image: frog,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How to use python',
-        text: 'Number one programming language'
+        category: 'React',
+        image: resumeimage,
+        link1: 'https://github.com/alevin93/resume',
+        link2: '',
+        title: 'My resume website',
+        text: 'Using React to make a pretty website'
     },
     {
         id: 2,
-        category: 'Animation',
-        image: horse,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How to animate in Maya',
-        text: 'Number one animation application'        
+        category: 'Game Dev',
+        image: videogame,
+        link1: '',
+        link2: '',
+        title: 'Unreal Game',
+        text: 'Unfinished Unreal game, I will happily show progress upon request'        
     },
     {
         id: 3,
-        category: 'JavaScript',
-        image: dog,
+        category: 'Node.js',
+        image: streamingsite,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How to make a website',

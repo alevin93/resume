@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import resume from '../img/megumin.jpg'
+import resume from '../img/aboutpage.jpg'
 import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
@@ -10,26 +10,24 @@ function ImageSection() {
                 <img src={resume} alt="" />
             </div>
             <div className="right-content">
-                    <h4>I am <span>AN ARTIST</span></h4>
+                    <h4>I am <span>Alex Levin</span></h4>
                 <p className="paragraph">
-                    What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class
+                    I'm recently graduated from college and trying to figure out what to do with the rest of my life.  I have a lot of side projects, some of which are even almost finished.  I am apiring to be a programmer whether in web developement, data science, or any other field that interests me.  Thank you for visiting my website.
                 </p>
                 <div className="about-info">
                     <div className="info-title">
-                        <p>Full Name</p>
+                        <p>Name</p>
                         <p>Age</p>
                         <p>Naitonality</p>
                         <p>Languages</p>
                         <p>Location</p>
-                        <p>Service</p>
                     </div>
                     <div className="info">
-                        <p>: Megumin</p>
-                        <p>: 15</p>
-                        <p>: Crimson Demon</p>
-                        <p>: Common</p>
-                        <p>: Axel City</p>
-                        <p>: Explosions</p>
+                        <p>: Alexander Levin</p>
+                        <p>: 29</p>
+                        <p>: USA</p>
+                        <p>: English, Japanese (learning)</p>
+                        <p>: Los Angeles, CA</p>
                     </div>
                 </div>
                 <PrimaryButton title={'Download CV'} />

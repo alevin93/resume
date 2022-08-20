@@ -46,13 +46,12 @@ function ContactPage() {
                         <ContactItem 
                             icon={phone} 
                             title={'Phone'}
-                            contact1={'5558675309'}
-                            contact2={'5558675309'}
+                            contact1={'(818) 205 - 7129'}
                         />
                         <ContactItem 
                             icon={email} 
                             title={'Email'}
-                            contact1={'emailfake35@gmail.com'}
+                            contact1={'alex.levin93@gmail.com'}
                         />
                         <ContactItem 
                             icon={location} 

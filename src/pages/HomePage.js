@@ -2,20 +2,24 @@ import React from 'react'
 import styled from 'styled-components';
 import FacebookIcon from '@material-ui/icons/Facebook'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import Particle from '../components/Particle';
 
 function HomePage() {
     return (
         <HomePageStyled>
             <div className="typography">
-                <h1>Hi I am <span>Lorem Ipsum</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1>Hi I'm <span>Alex Levin</span></h1>
+                <p>Thank you for visiting my resume site.</p>
                 <div className="icons">
-                    <a href="https://codepen.io/pen" className="icon i-facebook">
-                        <FacebookIcon />
-                    </a>
-                    <a href="https://codepen.io/pen" className="icon i-github">
+                    <a href="https://github.com/alevin93" className="icon i-github">
                         <GitHubIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-levin-07829a133/" className="icon i-linkedin">
+                        <LinkedInIcon />
+                    </a>
+                    <a href="https://www.facebook.com/alexander.levin.98" className="icon i-facebook">
+                        <FacebookIcon />
                     </a>
                 </div>
             </div>

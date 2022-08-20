@@ -11,15 +11,7 @@ function ReviewsSection() {
                 <Title title={'Reviews'} span={'Reviews'} />
                 <InnerLayout>
                     <div className="reviews">
-                        <ReviewItem 
-                            text={'Megumin is really cool!  Her explosions are great'} 
-                        />
-                        <ReviewItem 
-                            text={'Explosion magic is pretty stupid'} 
-                        />
-                        <ReviewItem 
-                            text={'Please hit me with an explosion'} 
-                        />
+                        <h4>No current reviews</h4>
                     </div>
                 </InnerLayout>
         </ReviewsSectionStyled>

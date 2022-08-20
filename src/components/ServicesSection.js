@@ -15,15 +15,15 @@ function ServicesSection() {
                 <div className="services">
                     <ServiceCard image={design} 
                                  title={'Web Design'} 
-                                 paragraph={'Lorem Ipsum dolor sit amet cons...'} />
+                                 paragraph={'React, Next, Node, backend, ...'} />
                     <div className="mid-card" >
                     <ServiceCard image={intelligence} 
                                  title={'Artificial Intelligence'} 
-                                 paragraph={'Lorem Ipsum dolor sit amet cons...'} />
+                                 paragraph={'Python, TensorFlow, ...'} />
                     </div>
                     <ServiceCard image={gamedev} 
                                  title={'Game Development'} 
-                                 paragraph={'Lorem Ipsum dolor sit amet cons...'} />
+                                 paragraph={'Unreal Engine, Unity, ....'} />
                 
                 </div>
             </ServicesSectionStyled>
