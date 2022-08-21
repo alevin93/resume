@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import styled from 'styled-components';
 import { MainLayout, InnerLayout } from '../styles/Layouts';
 import Title from '../components/Title';
@@ -12,17 +12,20 @@ import emailjs from 'emailjs-com'
 
 function ContactPage() {
 
+    const form = useRef();
+
     function sendEmail(e) {
         console.log("sendEmail has been run")
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'template_ootomig', e.target, 'ZXiv-dhXWENopmWoM')
+        emailjs.sendForm('service_1iu5gql', 'template_ootomig', e.target, 'ZXiv-dhXWENopmWoM')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
         e.target.reset();
+        alert("Message has been sent!");
     }
 
 
@@ -37,7 +40,7 @@ function ContactPage() {
                 <Title title={'Contact Me'} span={'Contact Me'} />
                 <InnerLayout className={'contact-section'}>
                     <div className={"left-content"}>
-                        <form className="form" onSubmit={sendEmail}>
+                        <form className="form" ref={form} onSubmit={sendEmail}>
                             <div className="form-field">
                                 <label htmlFor="name" id="name">Name</label>
                                 <input type="text" id="name" name="name"/>
@@ -55,9 +58,9 @@ function ContactPage() {
                                 <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
                             </div>
                             <div>
-                                <div className="form-field f-button">
-                                    <PrimaryButton title={'Submit'} onSubmit={sendEmail} />
-                                </div>
+                                <button className="unique-button">
+                                    <PrimaryButton title={'Submit'} type="submit" value="Send"/>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -86,6 +89,12 @@ function ContactPage() {
 }
 
 const ContactPageStyled = styled.section`
+
+    .unique-button{
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -149,10 +158,9 @@ const ContactPageStyled = styled.section`
                 }
             }
         }
-        .f-button{
-            margin-bottom: 2rem;
-        }
     }
+
+    
 `;
 
 export default ContactPage

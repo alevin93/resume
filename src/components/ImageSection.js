@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import resume from '../img/aboutpage.jpg'
 import PrimaryButton from './PrimaryButton';
-import resumeB from '../img/ResumeB.pdf'
 
 function ImageSection() {
     return (
@@ -31,7 +30,11 @@ function ImageSection() {
                         <p>: Los Angeles, CA</p>
                     </div>
                 </div>
-                <PrimaryButton title={'Download CV'} href={resumeB} />
+
+                <a href="https://drive.google.com/uc?export=download&id=1sFnj9eUFvRIMvUf03S-zCCHP_hO9IUUK">
+                <PrimaryButton title={'Download Resume'} href="https://drive.google.com/uc?export=download&id=1sFnj9eUFvRIMvUf03S-zCCHP_hO9IUUK" />
+                </a>
+
             </div>
         </ImageSectionStyled>
     )
