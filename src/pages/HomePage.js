@@ -10,7 +10,7 @@ function HomePage() {
         <HomePageStyled>
             <div className="typography">
                 <h1>Hi I'm <span>Alex Levin</span></h1>
-                <p>Thank you for visiting my resume site.</p>
+                <p>Thanks for visiting my resume site</p>
                 <div className="icons">
                     <a href="https://github.com/alevin93" className="icon i-github">
                         <GitHubIcon />

@@ -1,6 +1,7 @@
 import streamingsite from '../img/portImages/streamingsite.png'
 import resumeimage from '../img/portImages/resume.png'
 import videogame from '../img/portImages/videogame.jpg'
+import fbmaimage from '../img/portImages/fbma.png'
 
 const portfolios = [
     {
@@ -29,6 +30,15 @@ const portfolios = [
         link2: '',
         title: 'Streaming Site',
         text: 'Definitely no copyright infringement here'
+    },
+    {
+        id: 4,
+        category: 'Data Science',
+        image: fbmaimage,
+        link1: 'https://github.com/alevin93/FBMessengerAnalyzer',
+        link2: '',
+        title: 'FB Messenger Data Analyzer',
+        text: 'Python program that analyzes facebook messenger data to show trends and statistics'
     }
 ]
 
