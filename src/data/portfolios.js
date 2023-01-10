@@ -15,9 +15,7 @@ const portfolios = [
     },
     {
         id:2,
-        category: 'React',
-        category: 'Node',
-        category: 'MongoDB',
+        category: 'Full Stack',
         image: trivly,
         link1: 'https://github.com/alevin93/trivly-backend',
         link2: 'https://github.com/alevin93/trivly-frontend',
