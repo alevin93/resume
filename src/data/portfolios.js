@@ -1,6 +1,5 @@
 import streamingsite from '../img/portImages/streamingsite.png'
 import resumeimage from '../img/portImages/resume.png'
-import videogame from '../img/portImages/videogame.jpg'
 import discjs from '../img/portImages/discordjs.jpg'
 
 const portfolios = [
