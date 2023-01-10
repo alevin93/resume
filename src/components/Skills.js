@@ -16,6 +16,7 @@ function Skills() {
                     <h2>SQL & NoSQL</h2>
                     <h4>Java</h4>
                     <h2>REST API</h2>
+                    <h4>Linux/BASH</h4>
                 </div>
             </InnerLayout>
         </SkillsStyled>

@@ -1,7 +1,7 @@
 import streamingsite from '../img/portImages/streamingsite.png'
 import resumeimage from '../img/portImages/resume.png'
 import videogame from '../img/portImages/videogame.jpg'
-import fbmaimage from '../img/portImages/fbma.png'
+import discjs from '../img/portImages/discordjs.jpg'
 
 const portfolios = [
     {
@@ -14,31 +14,23 @@ const portfolios = [
         text: 'Using React to make a pretty website'
     },
     {
-        id: 2,
-        category: 'Game Dev',
-        image: videogame,
-        link1: '',
-        link2: '',
-        title: 'Unreal Game',
-        text: 'Unfinished Unreal game, I will happily show progress upon request'        
-    },
-    {
         id: 3,
         category: 'Node.js',
         image: streamingsite,
         link1: 'https://www.github.com/alevin93/background.show',
         link2: '',
-        title: 'Streaming Site',
+        title: 'Streaming Site (for Personal Use)',
         text: 'Definitely no copyright infringement here'
     },
     {
         id: 4,
-        category: 'Data Science',
-        image: fbmaimage,
-        link1: 'https://github.com/alevin93/FBMessengerAnalyzer',
+        category: 'Node.js',
+        image: discjs,
+        link1: 'https://github.com/nman1444/FloppaBot',
         link2: '',
-        title: 'FB Messenger Data Analyzer',
-        text: 'Python program that analyzes facebook messenger data to show trends and statistics'
+        title: 'Discord Bot for Game Info (Arma 3)',
+        text: 'Bot that has useful tools and relays game info'
+
     }
 ]
 
