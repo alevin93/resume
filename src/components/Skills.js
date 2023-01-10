@@ -2,7 +2,6 @@ import React from 'react'
 import { InnerLayout } from '../styles/Layouts';
 import Title from './Title';
 import styled from 'styled-components'
-import ProgressBar from './ProgressBar';
 
 function Skills() {
     return (
@@ -10,36 +9,13 @@ function Skills() {
             <Title title={'My Skills'} span={'My Skills'} />
             <InnerLayout>
                 <div className="skills">
-                    <ProgressBar
-                        title={'HTML5'}
-                        width={'90%'}
-                        text={'90%'}
-                    />
-                    <ProgressBar
-                        title={'Unreal Engine'}
-                        width={'50%'}
-                        text={'50%'}
-                    />
-                    <ProgressBar
-                        title={'JavaScript'}
-                        width={'65%'}
-                        text={'65%'}
-                    />
-                    <ProgressBar
-                        title={'Java'}
-                        width={'60%'}
-                        text={'60%'}
-                    />
-                    <ProgressBar
-                        title={'Python'}
-                        width={'65%'}
-                        text={'65%'}
-                    />
-                    <ProgressBar
-                        title={'React JS'}
-                        width={'50%'}
-                        text={'50%'}
-                     />
+                    <h2>HTML/CSS</h2>
+                    <h4>JavaScript</h4>
+                    <h2>Python</h2>
+                    <h4>Node & React</h4>
+                    <h2>SQL & NoSQL</h2>
+                    <h4>Java</h4>
+                    <h2>REST API</h2>
                 </div>
             </InnerLayout>
         </SkillsStyled>
